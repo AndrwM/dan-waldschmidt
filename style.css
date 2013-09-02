@@ -1,0 +1,174 @@
+/*
+Theme Name: Dan Waldschmidt
+Theme URI: http://danwaldschmidt.com
+Description: Dan Waldschmdit
+Author: Andrew McIntee
+Author URI: http://AndrewMcIntee.com
+Version: 2.0
+*/
+/* line 17, ../../../../../../.rbenv/versions/1.9.3-p374/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../.rbenv/versions/1.9.3-p374/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../.rbenv/versions/1.9.3-p374/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../.rbenv/versions/1.9.3-p374/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../.rbenv/versions/1.9.3-p374/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../.rbenv/versions/1.9.3-p374/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../.rbenv/versions/1.9.3-p374/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../.rbenv/versions/1.9.3-p374/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../.rbenv/versions/1.9.3-p374/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 44, sass/style.scss */
+* {
+  position: relative;
+}
+
+/* line 46, sass/style.scss */
+.container {
+  width: 980px;
+  margin: 0 auto;
+  overflow: hidden;
+  *zoom: 1;
+}
+
+/* line 52, sass/style.scss */
+a {
+  text-decoration: none;
+  color: #cc0504;
+}
+
+/* line 59, sass/style.scss */
+body {
+  background: #fff;
+  font-size: 15px;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  color: #000;
+}
+
+/* line 67, sass/style.scss */
+header nav {
+  padding: 12px 0;
+  text-transform: uppercase;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 74, sass/style.scss */
+header nav a.brand {
+  font-family: 'Cabin', 'Open Sans', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  display: block;
+  float: left;
+  font-size: 24px;
+  color: #000;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  margin: 0 14px 0 0;
+}
+/* line 82, sass/style.scss */
+header nav a.brand:hover {
+  color: #cc0504;
+}
+/* line 85, sass/style.scss */
+header nav li {
+  list-style: none;
+  float: left;
+}
+/* line 88, sass/style.scss */
+header nav li a {
+  display: block;
+  padding: 4px 10px;
+  color: #898989;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+/* line 93, sass/style.scss */
+header nav li a:hover {
+  color: #000;
+}
+/* line 95, sass/style.scss */
+header nav li.active a {
+  color: #cc0504;
+}
+/* line 98, sass/style.scss */
+header nav .btn-promo {
+  float: right;
+  color: #fff;
+  background: #cc0504;
+  padding: 10px;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  padding: 6px 12px;
+}
+/* line 109, sass/style.scss */
+header h1 {
+  color: #cc0504;
+  text-transform: uppercase;
+  font-size: 78px;
+  font-family: 'Cabin', 'Open Sans', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  line-height: 72px;
+  margin: 80px 0;
+}
