@@ -1,0 +1,62 @@
+/*!
+Theme Name: Dan Waldschmidt
+Theme URI: http://danwaldschmidt.com
+Description: Dan Waldschmdit
+Author: Andrew McIntee
+Author URI: http://AndrewMcIntee.com
+Version: 2.0
+*/
+
+@import "compass/reset";
+@import "compass/css3";
+@import "compass/utilities/general/clearfix";
+
+//----------------- Variables
+
+$red: #cc0504;
+$light-grey: #f0f0f0;
+$grey: #7f7f7f;
+$dark-grey: #1a1a1a;
+
+//----------------- Mixins
+
+@mixin ff-cabin {
+  font-family:'Cabin', 'Open Sans', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+
+@mixin ff-open-reg {
+  font-family:'Open Sans', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+}
+
+@mixin ff-open-bold {
+  font-family:'Open Sans', Helvetica, Arial, sans-serif;
+  font-weight: 600;
+}
+
+@mixin fade {
+  @include transition-duration(.5s);
+}
+
+@mixin easing {
+  @include transition(all 1s cubic-bezier(0.645, 0.045, 0.355, 1.000));
+}
+
+//----------------- Base
+
+* { position: relative; }
+
+.container {
+
+}
+
+a {
+  text-decoration: none;
+}
+
+//----------------- Layout
+
+body {
+  
+}
