@@ -13,6 +13,43 @@ a {
   color: $red;
 }
 
+h1 {
+  color: $red;
+  text-transform: uppercase;
+  font-size: 78px;
+  @include ff-cabin;
+  line-height: 72px;
+}
+
+h2 {
+  @include ff-open-bold;
+  font-size: 22px;
+  line-height: 28px;
+  padding:10px 0 18px 0;
+}
+
+h3 {
+  @include ff-open-bold;
+  font-size: 18px;
+  line-height: 26px;
+  padding:10px 0 18px 0;
+}
+
+p {
+  @include ff-open-reg;
+  font-size: 15px;
+  line-height: 26px;
+  padding-bottom: 28px;
+}
+
+blockquote {
+  @include ff-open-reg;
+  font-size: 15px;
+  line-height: 26px;
+  padding: 0 0 28px 56px;
+  background: url(images/blockquote.png) no-repeat 12px 6px;
+}
+
 //----------------- Layout
 
 body {
@@ -21,6 +58,7 @@ body {
   @include ff-open-reg;
   color: #000;
 }
+
 header {
 
   nav {
@@ -63,15 +101,6 @@ header {
       padding:6px 12px;
     }
 
-  }
-
-  h1 {
-    color: $red;
-    text-transform: uppercase;
-    font-size: 78px;
-    @include ff-cabin;
-    line-height: 72px;
-    margin: 80px 0;
   }
 
 }

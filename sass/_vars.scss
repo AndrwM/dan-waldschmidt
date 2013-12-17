@@ -3,7 +3,7 @@
 $red: #cc0504;
 $dark-red: #6d181a;
 $light-grey: #e5e5e5;
-$grey: #898989;
+$grey: #7f7f7f;
 
 //----------------- Mixins
 
@@ -23,5 +23,5 @@ $grey: #898989;
 }
 
 @mixin fade {
-  @include transition-duration(.3s);
+  @include transition-duration(.5s);
 }
