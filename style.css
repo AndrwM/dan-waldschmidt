@@ -1,4 +1,4 @@
-/*
+/*!
 Theme Name: Dan Waldschmidt
 Theme URI: http://danwaldschmidt.com
 Description: Dan Waldschmdit
@@ -71,12 +71,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 44, sass/style.scss */
+/* line 3, sass/_global.scss */
 * {
   position: relative;
 }
 
-/* line 46, sass/style.scss */
+/* line 5, sass/_global.scss */
 .container {
   width: 980px;
   margin: 0 auto;
@@ -84,13 +84,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   *zoom: 1;
 }
 
-/* line 52, sass/style.scss */
+/* line 11, sass/_global.scss */
 a {
   text-decoration: none;
   color: #cc0504;
 }
 
-/* line 59, sass/style.scss */
+/* line 18, sass/_global.scss */
 body {
   background: #fff;
   font-size: 15px;
@@ -99,7 +99,7 @@ body {
   color: #000;
 }
 
-/* line 67, sass/style.scss */
+/* line 26, sass/_global.scss */
 header nav {
   padding: 12px 0;
   text-transform: uppercase;
@@ -109,7 +109,7 @@ header nav {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 74, sass/style.scss */
+/* line 33, sass/_global.scss */
 header nav a.brand {
   font-family: 'Cabin', 'Open Sans', Helvetica, Arial, sans-serif;
   font-weight: 700;
@@ -123,16 +123,16 @@ header nav a.brand {
   transition-duration: 0.3s;
   margin: 0 14px 0 0;
 }
-/* line 82, sass/style.scss */
+/* line 41, sass/_global.scss */
 header nav a.brand:hover {
   color: #cc0504;
 }
-/* line 85, sass/style.scss */
+/* line 44, sass/_global.scss */
 header nav li {
   list-style: none;
   float: left;
 }
-/* line 88, sass/style.scss */
+/* line 47, sass/_global.scss */
 header nav li a {
   display: block;
   padding: 4px 10px;
@@ -142,15 +142,15 @@ header nav li a {
   -o-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
-/* line 93, sass/style.scss */
+/* line 52, sass/_global.scss */
 header nav li a:hover {
   color: #000;
 }
-/* line 95, sass/style.scss */
+/* line 54, sass/_global.scss */
 header nav li.active a {
   color: #cc0504;
 }
-/* line 98, sass/style.scss */
+/* line 57, sass/_global.scss */
 header nav .btn-promo {
   float: right;
   color: #fff;
@@ -162,7 +162,7 @@ header nav .btn-promo {
   transition-duration: 0.3s;
   padding: 6px 12px;
 }
-/* line 109, sass/style.scss */
+/* line 68, sass/_global.scss */
 header h1 {
   color: #cc0504;
   text-transform: uppercase;
