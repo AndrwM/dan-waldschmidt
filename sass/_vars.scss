@@ -1,6 +1,7 @@
 //----------------- Variables
 
-$red: #cc0504;
+// $red: #cc0504;
+$red: #D61C1C;
 $dark-red: #6d181a;
 $light-grey: #e5e5e5;
 $grey: #7f7f7f;
@@ -24,4 +25,12 @@ $grey: #7f7f7f;
 
 @mixin fade {
   @include transition-duration(.5s);
+}
+
+// https://github.com/michaelsacca/Compass-Placeholder-Text-Mixin
+@mixin input-placeholder {
+  &:-moz-placeholder { @content; }
+  &::-moz-placeholder { @content; }
+  &:-ms-input-placeholder { @content; }
+  &::-webkit-input-placeholder { @content; } 
 }

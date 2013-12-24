@@ -2,15 +2,33 @@
 
 * { position: relative; }
 
-.container {
-  width: 980px;
-  margin: 0 auto;
-  @include clearfix;
+::selection {
+  background: $red;
+  color: #fff;
+}
+
+::-moz-selection {
+  background: $red;
+  color: #fff;
+}
+
+textarea:focus, input:focus {
+  outline-color:$dark-red;
 }
 
 a {
   text-decoration: none;
   color: $red;
+}
+
+a.btn {
+  background: #000;
+  @include ff-open-bold;
+  text-transform: uppercase;
+  padding: 12px 16px;
+  color: #fff;
+  text-align: center;
+  display: inline-block;
 }
 
 h1 {
@@ -50,7 +68,6 @@ blockquote {
   background: url(images/blockquote.png) no-repeat 12px 6px;
 }
 
-//----------------- Layout
 
 body {
   background: #fff;
@@ -58,6 +75,8 @@ body {
   @include ff-open-reg;
   color: #000;
 }
+
+//----------------- Header
 
 header {
 
@@ -84,10 +103,16 @@ header {
       float: left;
       & a {
         display: block;
-        padding: 4px 10px;
+        padding: 6px 10px;
         color: $grey;
         @include fade;
-        &:hover { color: #000; }
+        background: no-repeat top 6px right 1px;
+        &:hover {
+          color: #000;
+        }
+        &.outbound:hover {
+          background-image: url(images/outbound.gif);
+        }
       }
       &.active a { color: $red; }
     }
@@ -96,11 +121,74 @@ header {
       float: right;
       color: #fff;
       background: $red;
-      padding:10px;
       @include fade;
-      padding:6px 12px;
+      padding:7px 12px 6px 12px;
+      margin-right: 18px;
+      &:after {
+        position: absolute;
+        z-index: 1;
+        right: -10px;
+        top: 0px;
+        border-top: 14px solid rgba(0, 0, 0, 0);
+        border-right: 0px solid rgba(0, 0, 0, 0);
+        border-bottom: 14px solid rgba(0, 0, 0, 0);
+        border-left: 10px solid $red; 
+        width: 0;
+        height: 0;
+        content: " ";
+      }
+      span.ss-video {
+        padding: 0px 0px 0px 6px;
+      }
+      &:hover {
+        margin-right: 14px;
+      }
     }
 
   }
 
+}
+
+//----------------- Layout
+
+
+.container {
+  width: 980px;
+  margin: 0 auto;
+  @include clearfix;
+}
+
+.primary-content {
+  margin: 0 0 30px 0;
+  float: left;
+  width: 70%;
+}
+
+.secondary-content {
+  width: 210px;
+  float: right;
+}
+
+//----------------- Footer
+
+footer {
+  margin-top: 40px;
+  background: $light-grey;
+  padding:14px;
+  font-size: 13px;
+  color: $grey;
+  img.logo {
+    vertical-align: -6px;
+    padding-right:10px; 
+  }
+  .social {
+    float: right;
+    padding: 4px;
+    a {
+      padding: 4px 4px;
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+  }
 }
