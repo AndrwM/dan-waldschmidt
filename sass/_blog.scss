@@ -1,5 +1,10 @@
 h1 {
-  padding: 80px 0 60px 0;
+  padding: 70px 0 40px 0;
+}
+
+&.blog-single h1 {
+  font-size: 78px;
+  padding: 70px 0 80px 0;
 }
 
 //----------------- Post-Single-Metabar
@@ -26,7 +31,7 @@ h1 {
     font-size: 14px;
     text-transform: uppercase;
     @include ff-open-bold;
-    padding: 16px 14px 13px 14px;
+    padding: 16px 13px 13px 13px;
     &:before {
       padding: 0px 6px 0px 0px;
     }
@@ -58,6 +63,9 @@ h1 {
         outline: none !important;
       }
     }
+    @include breakpoint(med) {
+      display: none;
+    }
   }
 }
 
@@ -68,7 +76,13 @@ h1 {
 //----------------- Blog Post Listing
 
 section.post-listing {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  @include breakpoint(sm) {
+    text-align: center;
+    p {
+      text-align: left;
+    }
+  }
   .meta {
     color: $grey;
     font-size: 14px;
@@ -143,6 +157,10 @@ section.post-listing {
       }
     }
   }
+  @include breakpoint(sm) {
+    text-align: center;
+    margin: 0;
+  }
 }
 
 //----------------- Ads
@@ -151,7 +169,8 @@ section.post-listing {
 
   .primary-content {
     background: $red;
-    margin-top:0;
+    margin-top:10px;
+    margin-bottom:20px;
     color: #fff;
     .title {
       @include ff-cabin;
@@ -181,7 +200,6 @@ section.post-listing {
 
   .secondary-content {
     margin-top: 24px;
-    width: 210px;
     float: right;
     img {
       padding-bottom: 10px;
@@ -194,6 +212,9 @@ section.post-listing {
       font-size: 13px;
       @include ff-cabin;
       text-transform: uppercase;
+    }
+    @include breakpoint(sm) {
+      display: none;
     }
   }
 

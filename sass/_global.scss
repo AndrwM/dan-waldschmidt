@@ -34,9 +34,12 @@ a.btn {
 h1 {
   color: $red;
   text-transform: uppercase;
-  font-size: 78px;
+  font-size: 100px;
   @include ff-cabin;
   line-height: 72px;
+  @include breakpoint(sm) {
+    text-align: center;
+  }
 }
 
 h2 {
@@ -76,6 +79,59 @@ body {
   color: #000;
 }
 
+//----------------- Layout
+
+
+.container {
+  max-width: 1000px;
+  min-width: 440px;
+  margin: 0 auto;
+  padding: 0 40px;
+  @include clearfix;
+}
+
+.primary-content {
+  margin: 0 0 0px 0;
+  float: left;
+  width: 74%;
+  @include breakpoint(sm) {
+    float: none;
+    width: 100%;
+  }
+}
+
+.secondary-content {
+  width: 20%;
+  min-width:150px;
+  float: right;
+  margin-left: 20px;
+  @include breakpoint(sm) {
+    float: none;
+    width: 100%;
+  }
+}
+
+@include breakpoint(lrg) {
+  .breakpoint-hide-lrg {
+    display: none;
+  }
+}
+@include breakpoint(med) {
+  .breakpoint-hide-med {
+    display: none;
+  }
+}
+@include breakpoint(sm) {
+  .breakpoint-hide-sm {
+    display: none;
+  }
+}
+@include breakpoint(mobile) {
+  .breakpoint-hide-mobile {
+    display: none;
+  }
+}
+
 //----------------- Header
 
 header {
@@ -96,25 +152,38 @@ header {
       @include fade;
       margin: 0 14px 0 0;
       &:hover { color: $red; }
+      @include breakpoint(sm) {
+        float: none;
+        margin: 20px 0 0px 0;
+        font-size: 30px;
+        text-align: center;
+      }
     }
 
-    li {
-      list-style: none;
-      float: left;
-      & a {
-        display: block;
-        padding: 6px 10px;
-        color: $grey;
-        @include fade;
-        background: no-repeat top 6px right 1px;
-        &:hover {
-          color: #000;
+    ul {
+      text-align: center;
+      li {
+        list-style: none;
+        float: left;
+        @include breakpoint(sm) {
+          float: none;
+          display: inline-block;
         }
-        &.outbound:hover {
-          background-image: url(images/outbound.gif);
+        & a {
+          display: block;
+          padding: 6px 10px;
+          color: $grey;
+          @include fade;
+          background: no-repeat top 6px right 1px;
+          &:hover {
+            color: #000;
+          }
+          &.outbound:hover {
+            background-image: url(images/outbound.gif);
+          }
         }
+        &.active a { color: $red; }
       }
-      &.active a { color: $red; }
     }
 
     .btn-promo {
@@ -143,30 +212,12 @@ header {
       &:hover {
         margin-right: 14px;
       }
+      @include breakpoint(med) {
+        display: none;
+      }
     }
-
   }
 
-}
-
-//----------------- Layout
-
-
-.container {
-  width: 980px;
-  margin: 0 auto;
-  @include clearfix;
-}
-
-.primary-content {
-  margin: 0 0 30px 0;
-  float: left;
-  width: 70%;
-}
-
-.secondary-content {
-  width: 210px;
-  float: right;
 }
 
 //----------------- Footer

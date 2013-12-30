@@ -34,3 +34,20 @@ $grey: #7f7f7f;
   &:-ms-input-placeholder { @content; }
   &::-webkit-input-placeholder { @content; } 
 }
+
+
+// http://css-tricks.com/conditional-media-query-mixins/
+@mixin breakpoint($point) {
+  @if $point == lrg {
+    @media (max-width: 1200px) { @content; }
+  }
+  @if $point == med {
+    @media (max-width: 940px) { @content; }
+  }
+  @else if $point == sm {
+    @media (max-width: 740px) { @content; }
+  }
+  @else if $point == mobile {
+    @media (max-width: 600px)  { @content; }
+  }
+}
