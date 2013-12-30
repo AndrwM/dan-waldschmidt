@@ -1,0 +1,100 @@
+//----------------- Header
+
+header {
+
+  nav {
+    padding: 12px 0;
+    text-transform: uppercase;
+    @include ff-open-bold;
+    font-size: 14px;
+    @include clearfix;
+
+    a.brand {
+      @include ff-cabin;
+      display: block;
+      float: left;
+      font-size: 24px;
+      color: #000;
+      @include fade;
+      margin: 0 14px 0 0;
+      &:hover { color: $red; }
+      @include breakpoint(sm) {
+        float: none;
+      }
+    }
+
+    li {
+      list-style: none;
+      float: left;
+      & a {
+        display: block;
+        padding: 6px 10px;
+        color: $grey;
+        @include fade;
+        background: no-repeat top 6px right 1px;
+        &:hover {
+          color: #000;
+        }
+        &.outbound:hover {
+          background-image: url(images/outbound.gif);
+        }
+      }
+      &.active a { color: $red; }
+    }
+
+    .btn-promo {
+      float: right;
+      color: #fff;
+      background: $red;
+      @include fade;
+      padding:7px 12px 6px 12px;
+      margin-right: 18px;
+      &:after {
+        position: absolute;
+        z-index: 1;
+        right: -10px;
+        top: 0px;
+        border-top: 14px solid rgba(0, 0, 0, 0);
+        border-right: 0px solid rgba(0, 0, 0, 0);
+        border-bottom: 14px solid rgba(0, 0, 0, 0);
+        border-left: 10px solid $red; 
+        width: 0;
+        height: 0;
+        content: " ";
+      }
+      span.ss-video {
+        padding: 0px 0px 0px 6px;
+      }
+      &:hover {
+        margin-right: 14px;
+      }
+    }
+  }
+  @include breakpoint(sm) {
+    display: none;
+  }
+}
+
+//----------------- Footer
+
+footer {
+  margin-top: 40px;
+  background: $light-grey;
+  padding:14px;
+  font-size: 13px;
+  color: $grey;
+  img.logo {
+    vertical-align: -6px;
+    padding-right:10px; 
+  }
+  .social {
+    float: right;
+    padding: 4px;
+    a {
+      padding: 4px 4px;
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+  }
+}

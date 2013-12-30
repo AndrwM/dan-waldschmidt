@@ -42,6 +42,7 @@ html:hover [class^="ss-"]{-ms-zoom: 1;}
   -o-font-feature-settings: "liga";
   font-feature-settings: "liga";
   -webkit-font-smoothing: antialiased;
+  vertical-align: -2px;
 }
 
 [class^="ss-"].right:before,
