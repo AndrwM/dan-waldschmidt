@@ -15,4 +15,8 @@ Version: 2.0
 @import "global";
 @import "symbolset";
 
+@import "ads";
+
 body.blog { @import "blog"; }
+body.index { @import "index"; }
+body.page-about { @import "page-about"; }
