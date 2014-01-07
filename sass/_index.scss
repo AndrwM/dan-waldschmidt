@@ -1,0 +1,91 @@
+& {
+  background: #000 url(images/index-bg-jan14.jpg) no-repeat center top;
+}
+
+header {
+
+  nav {
+    a.brand {
+      color: #fff;
+      &:hover { color: $red; }
+    }
+
+    ul li a {
+      color: $grey;
+      &:hover {
+        color: $red;
+      }
+      &.outbound:hover {
+        background-image: url(images/outbound.gif);
+      }
+    }
+
+    .btn-promo {
+      display: none;
+    }
+  }
+
+}
+
+.callout {
+  margin-top: 96px;
+  h1 {
+    color: #fff;
+    font-size: 60px;
+    line-height: 57px;
+  }
+  h2 {
+    color: $red;
+    font-size: 19px;
+    padding:7px 0 16px;
+    text-transform: uppercase;
+  }
+  a.btn {
+    background: $red;
+    font-size: 16px;
+    height: 20px;
+    height: 16px;
+    @include fade;
+    margin-right: 10px;
+    cursor: pointer;
+    span {
+      padding: 0px 0px 0px 6px;
+    }
+    &:hover {
+      background: #fff;
+      color: $red;
+    }
+    &.cta:after {
+      position: absolute;
+      z-index: 1;
+      right: -10px;
+      top: 0px;
+      border-top: 20px solid rgba(0, 0, 0, 0);
+      border-right: 0px solid rgba(0, 0, 0, 0);
+      border-bottom: 20px solid rgba(0, 0, 0, 0);
+      border-left: 10px solid $red;
+      width: 0;
+      height: 0;
+      content: " ";
+      @include fade;
+    }
+    &.cta:hover {
+      padding-right: 18px;
+      &:after {
+        border-left-color:#fff;
+      }
+    }
+  }
+}
+
+.logos {
+  background: #000 url(../images/index-logos.jpg) center center no-repeat;
+  height: 88px;
+  width: 100%;
+  bottom:0;
+  position: fixed;
+}
+
+footer {
+  display: none;
+}

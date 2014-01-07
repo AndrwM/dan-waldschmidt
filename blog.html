@@ -30,7 +30,12 @@
   </nav>
 </header>
 
-<div class="container"><h1>Blog</h1></div>
+<div class="container">
+  <h1>Blog</h1>
+  <form role="search" method="get" class="blog-search ss-search" action="http://twentythirteendemo.wordpress.com/">
+      <input type="text" placeholder="Search By Keyword">
+    </form>
+</div>
 
 <div class="container">
 
@@ -95,13 +100,13 @@
 
 <footer>
   <div class="container">
-    <img class="logo" src="images/waldlogo-footer.png">Copyright Waldschmidt Partners. All Rights Reserved.
+    <img class="logo" src="images/waldlogo-footer.png">&copy; 2014 Waldschmidt Partners. All Rights Reserved.
     <div class="social">
       <a href="#"><img src="images/socialfooter-tw.png"></a>
       <a href="#"><img src="images/socialfooter-fb.png"></a>
       <a href="#"><img src="images/socialfooter-in.png"></a>
       <a href="#"><img src="images/socialfooter-mail.png"></a>
-      <a href="#"><img src="images/socialfooter-rss.png"></a>
+      <a href="#" class="breakpoint-hide-mobile"><img src="images/socialfooter-rss.png"></a>
     </div>
   </div>
 </footer>
