@@ -1455,28 +1455,32 @@ html:hover [class^="ss-"] {
   }
 }
 
-/* line 4, sass/_sidebar.scss */
-.secondary-content.sidebar h3.widgettitle {
-  color: #7f7f7f;
+/* line 3, sass/_sidebar.scss */
+.secondary-content.sidebar {
+  opacity: 0.6;
   -webkit-transition-duration: 0.5s;
   -moz-transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
+}
+/* line 6, sass/_sidebar.scss */
+.secondary-content.sidebar h3.widgettitle {
+  color: #000;
   padding-bottom: 10px;
 }
-/* line 9, sass/_sidebar.scss */
+/* line 10, sass/_sidebar.scss */
 .secondary-content.sidebar .widget {
   margin-bottom: 20px;
 }
-/* line 11, sass/_sidebar.scss */
+/* line 12, sass/_sidebar.scss */
 .secondary-content.sidebar .widget li {
   border-bottom: 1px solid #e5e5e5;
 }
-/* line 14, sass/_sidebar.scss */
+/* line 15, sass/_sidebar.scss */
 .secondary-content.sidebar .widget li:first-child {
   border-top: 1px solid #e5e5e5;
 }
-/* line 17, sass/_sidebar.scss */
+/* line 18, sass/_sidebar.scss */
 .secondary-content.sidebar .widget li a {
   text-transform: uppercase;
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
@@ -1485,7 +1489,7 @@ html:hover [class^="ss-"] {
   padding: 12px 2px;
   display: block;
 }
-/* line 23, sass/_sidebar.scss */
+/* line 24, sass/_sidebar.scss */
 .secondary-content.sidebar .widget li a:hover {
   -webkit-transition-duration: 0.5s;
   -moz-transition-duration: 0.5s;
@@ -1495,25 +1499,25 @@ html:hover [class^="ss-"] {
   color: #fff;
   padding-left: 12px;
 }
-/* line 29, sass/_sidebar.scss */
+/* line 30, sass/_sidebar.scss */
 .secondary-content.sidebar .widget li a.archive {
   color: #000;
 }
-/* line 31, sass/_sidebar.scss */
+/* line 32, sass/_sidebar.scss */
 .secondary-content.sidebar .widget li a.archive:hover {
   background: none;
   color: #7f7f7f;
   padding-left: 2px;
 }
-/* line 40, sass/_sidebar.scss */
+/* line 41, sass/_sidebar.scss */
 .secondary-content.sidebar .widget.widget-text p {
   padding-bottom: 10px;
 }
-/* line 45, sass/_sidebar.scss */
+/* line 46, sass/_sidebar.scss */
 .secondary-content.sidebar .widget.widget-newsletter p {
   padding-bottom: 4px;
 }
-/* line 48, sass/_sidebar.scss */
+/* line 49, sass/_sidebar.scss */
 .secondary-content.sidebar .widget.widget-newsletter input {
   font-size: 14px;
   text-transform: uppercase;
@@ -1530,14 +1534,14 @@ html:hover [class^="ss-"] {
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
-/* line 59, sass/_sidebar.scss */
+/* line 60, sass/_sidebar.scss */
 .secondary-content.sidebar .widget.widget-newsletter input[type="submit"] {
   color: #fff;
   background: #7f7f7f;
   padding: 6px 0 6px;
   cursor: pointer;
 }
-/* line 64, sass/_sidebar.scss */
+/* line 65, sass/_sidebar.scss */
 .secondary-content.sidebar .widget.widget-newsletter input[type="submit"]:hover {
   background: #d61c1c;
 }
@@ -1557,14 +1561,14 @@ html:hover [class^="ss-"] {
 .secondary-content.sidebar .widget.widget-newsletter input::-webkit-input-placeholder {
   color: #7f7f7f;
 }
-/* line 71, sass/_sidebar.scss */
+/* line 72, sass/_sidebar.scss */
 .secondary-content.sidebar .widget.widget-newsletter input:focus {
   outline: none !important;
   border-bottom: 1px solid #7f7f7f;
 }
 /* line 79, sass/_sidebar.scss */
-.secondary-content.sidebar:hover h3.widgettitle {
-  color: #000;
+.secondary-content.sidebar:hover {
+  opacity: 1;
 }
 @media (max-width: 740px) {
   /* line 3, sass/_sidebar.scss */
