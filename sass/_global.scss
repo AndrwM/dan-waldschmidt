@@ -56,6 +56,23 @@ h3 {
   padding:10px 0 18px 0;
 }
 
+h4 {
+  @include ff-open-bold;
+  font-size: 14px;
+  line-height: 18px;
+  padding:6px 0 10px 0;
+  text-transform: uppercase;
+}
+
+h5 {
+  @include ff-open-bold;
+  font-size: 12px;
+  line-height: 18px;
+  padding:6px 0 10px 0;
+  text-transform: uppercase;
+  color: $grey;
+}
+
 p {
   @include ff-open-reg;
   font-size: 15px;
@@ -97,6 +114,18 @@ body {
   @include breakpoint(sm) {
     float: none;
     width: 100%;
+  }
+  .col2 {
+    margin: 10px 0px 20px;
+    @include clearfix;
+    .col {
+      width: 47%;
+      margin-right: 6%;
+      float: left;
+      &:nth-child(even) {
+        margin-right: 0;
+      }
+    }
   }
 }
 
@@ -150,7 +179,7 @@ header {
       font-size: 24px;
       color: #000;
       @include fade;
-      margin: 0 14px 0 0;
+      margin: 2px 14px 0 0;
       &:hover { color: $red; }
       @include breakpoint(sm) {
         float: none;
@@ -171,7 +200,7 @@ header {
         }
         & a {
           display: block;
-          padding: 6px 10px;
+          padding: 7px 10px;
           color: $grey;
           @include fade;
           background: no-repeat top 6px right 1px;

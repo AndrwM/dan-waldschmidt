@@ -185,47 +185,8 @@ section.post-listing {
   }
 }
 
-//----------------- Blog Sidebar
+//----------------- Sidebar
 
 .secondary-content.sidebar {
-  text-align: right;
   margin-top: 40px;
-  h3.widgettitle{
-    color: $grey;
-    padding-bottom: 10px;
-  }
-  .widget {
-    margin-bottom: 20px;
-    li {
-      border-bottom: 1px solid $light-grey;
-      &:first-child {
-        border-top: 1px solid $light-grey;
-      }
-      a {
-        text-transform: uppercase;
-        @include ff-open-bold;
-        font-size: 14px;
-        padding: 12px 2px;
-        display: block;
-        &:hover {
-          @include fade;
-          background: $red;
-          color: #fff;
-          padding-right: 12px;
-        }
-        &.archive {
-          color: #000;
-          &:hover {
-            background: none;
-            color: $grey;
-            padding-right: 2px;
-          }
-        }
-      }
-    }
-  }
-  @include breakpoint(sm) {
-    text-align: center;
-    margin: 0;
-  }
 }

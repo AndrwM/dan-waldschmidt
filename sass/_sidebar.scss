@@ -1,0 +1,87 @@
+//----------------- Sidebar
+
+.secondary-content.sidebar {
+  h3.widgettitle{
+    color: $grey;
+    @include fade;
+    padding-bottom: 10px;
+  }
+  .widget {
+    margin-bottom: 20px;
+    li {
+      border-bottom: 1px solid $light-grey;
+      // margin-bottom: 10px;
+      &:first-child {
+        border-top: 1px solid $light-grey;
+      }
+      a {
+        text-transform: uppercase;
+        @include ff-open-bold;
+        font-size: 14px;
+        padding: 12px 2px;
+        display: block;
+        &:hover {
+          @include fade;
+          background: $red;
+          color: #fff;
+          padding-left: 12px;
+        }
+        &.archive {
+          color: #000;
+          &:hover {
+            background: none;
+            color: $grey;
+            padding-left: 2px;
+          }
+        }
+      }
+    }
+    &.widget-text {
+      p {
+        padding-bottom:10px;
+      }
+    }
+    &.widget-newsletter {
+      p {
+        padding-bottom: 4px;
+      }
+      input {
+        font-size: 14px;
+        text-transform: uppercase;
+        @include ff-open-bold;
+        width: 200px;
+        border: none;
+        color: $red;
+        border-bottom: 1px solid $light-grey;
+        margin:0 0 10px 0;
+        padding: 0 0 4px;
+        @include fade;
+        &[type="submit"] {
+          color:#fff;
+          background: $grey;
+          padding: 6px 0 6px;
+          cursor: pointer;
+          &:hover {
+            background: $red;
+          }
+        }
+        @include input-placeholder {
+          color: $grey;
+        }
+        &:focus {
+          outline: none !important;
+          border-bottom: 1px solid $grey;
+        }
+      }
+    }
+  }
+  &:hover {
+    h3.widgettitle{
+      color: #000;
+    }
+  }
+  @include breakpoint(sm) {
+    text-align: center;
+    margin: 0;
+  }
+}

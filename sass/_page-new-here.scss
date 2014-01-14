@@ -1,0 +1,41 @@
+// & {
+//   background: url(images/page-bg-about.jpg) center top 80px no-repeat;
+// }
+
+.new-here-video {
+  text-align: center;
+  background: #000 url(images/new-here-bg-jan14.jpg) top center fixed no-repeat;
+  background-size:contain;
+  padding: 140px 0 200px;
+  margin-bottom: 40px;
+  h1 {
+    color: #fff;
+  }
+  h2 {
+    color: $grey;
+    font-size: 19px;
+    padding:6px 0 18px;
+    text-transform: uppercase;
+  }
+  a.btn {
+    background: $red;
+    font-size: 16px;
+    height: 20px;
+    height: 16px;
+    @include fade;
+    margin-right: 10px;
+    cursor: pointer;
+    span {
+      padding: 0px 0px 0px 6px;
+    }
+    &:hover {
+      background: #fff;
+      color: $red;
+    }
+  }
+}
+
+.primary-content.page-content {
+  // width: 53%;
+  margin-bottom: 30px;
+}
