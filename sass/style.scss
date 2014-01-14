@@ -16,7 +16,9 @@ Version: 2.0
 @import "symbolset";
 
 @import "ads";
+@import "sidebar";
 
 body.blog { @import "blog"; }
 body.index { @import "index"; }
 body.page-about { @import "page-about"; }
+body.page-new-here { @import "page-new-here"; }
